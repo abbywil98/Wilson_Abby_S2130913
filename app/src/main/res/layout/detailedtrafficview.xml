@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Abby Wilson
+S2130913 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true">
+
+        <include
+            layout="@layout/appbar"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:id="@+id/detailed_view"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="7"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/descriptionText"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginRight="8dp"
+                            android:includeFontPadding="false"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="600dp"
+                            android:layout_height="85dp"
+                            android:id="@+id/startEndDateText"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="27dp"
+                            android:layout_above="@+id/latLonText"
+                            android:layout_centerHorizontal="true" />
+
+
+                        <TextView
+                            android:id="@+id/latLonText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:maxLines="2"
+                            android:textAlignment="gravity"
+                            android:textAppearance="@android:style/TextAppearance.Material.Medium.Inverse"
+                            android:textColor="@android:color/black">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/linkText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:textAlignment="gravity"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp"></TextView>
+                        <TextView
+                            android:id="@+id/publishDateText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:textAlignment="gravity"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="19dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/carImage"
+                            android:layout_width="55dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="30dp"
+                            android:src="@drawable/trafficcone"></ImageView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+    </LinearLayout>

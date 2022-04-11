@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Abby Wilson
+    S2130913 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    tools:context=".ParseData">
+    >
+    <include
+        layout="@layout/appbar"/>
+
+    <ListView
+        android:layout_below="@id/toolbar"
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill"
+        android:baselineAligned="false"
+        android:divider="#583052b6"
+        android:dividerHeight="1.5dp"
+        android:ems="1"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="false"
+        android:includeFontPadding="true"
+        android:padding=".25dp"/>
+
+</LinearLayout>
